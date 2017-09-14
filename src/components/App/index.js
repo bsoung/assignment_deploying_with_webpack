@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 var triggerGeolocationRequest = function() {
-  var options = {
-    enableHighAccuracy: true,
-    maximumAge: 1000
-  };
+  var options = {timeout: 30000, enableHighAccuracy: true, maximumAge: 75000}
 
   var result;
 
